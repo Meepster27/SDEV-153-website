@@ -43,22 +43,25 @@ body {
   margin-bottom: 20px;
   font-size: 16px;
   } 
-  body {
+  body.calendar-body {
+    justify-content: center;
+    align-items: center;
     display: flex;
-    background: #edecec;
+    background: black;
     min-height: 100vh;
     padding: 0 10px;
     align-items: center;
     justify-content: center;
   }
-  *{
+/* * {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    color: white !important;
-}
+    color: black !important;
+} */
 
 .calendar-container {
+  
     background: rgb(22, 96, 33);
     width: 320px;                
     border-radius: 10px;
@@ -85,8 +88,8 @@ header .calendar-navigation span {
     line-height: 30px;
     border-radius: 50%;
     user-select: none;
-    color: #aeabab;
-    font-size: 1.4rem;          
+    color: black
+    font-size 1.4rem;          
 }
 
 .calendar-navigation span:last-child {
@@ -94,7 +97,7 @@ header .calendar-navigation span {
 }
 
 header .calendar-navigation span:hover {
-    background: #f2f2f2;
+    background: black;
 }
 
 header .calendar-current-date {
@@ -125,11 +128,11 @@ header .calendar-current-date {
     font-size: 0.9rem;          
     color: #414141;
     margin-top: 20px;           
-    position: relative;
+    position: center;
     z-index: 1;
     cursor: pointer;
     text-align: center;
-    box-sizing: border-box;
+    box-sizing: borber-box;
 }
 
 .calendar-body .calendar-weekdays li {
@@ -139,8 +142,8 @@ header .calendar-current-date {
 }
 
 .calendar-dates li.inactive {
-    color: #aaa;
-    cursor: default;
+    color:antiquewhite
+    cursor default;
 }
 
 .calendar-dates li.active {
