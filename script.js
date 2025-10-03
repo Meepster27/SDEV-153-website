@@ -1,53 +1,89 @@
-const currentMonthYear = document.getElementById('currentMonthYear');
-const calendarDays = document.getElementById('calendarDays');
-const prevMonthBtn = document.getElementById('prevMonth');
-const nextMonthBtn = document.getElementById('nextMonth');
-
 let date = new Date();
-let currentMonth = date.getMonth();
-let currentYear = date.getFullYear();
+let year = date.getFullYear();
+let month = date.getMonth();
 
-function renderCalendar() {
-    calendarDays.innerHTML = ''; // Clear previous days
-    const firstDayOfMonth = new Date(currentYear, currentMonth, 1).getDay();
-    const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+const day = document.querySelector(".calendar-dates");
+const currdate = document.querySelector(".calendar-current-date");
+const prenexIcons = document.querySelectorAll(".calendar-navigation span");
 
-    currentMonthYear.textContent = new Date(currentYear, currentMonth).toLocaleString('en-us', { month: 'long', year: 'numeric' });
+const months = [
+  "January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
 
-    // Add empty divs for days before the first day of the month
-    for (let i = 0; i < firstDayOfMonth; i++) {
-        const emptyDiv = document.createElement('div');
-        emptyDiv.classList.add('empty');
-        calendarDays.appendChild(emptyDiv);
-    }
+let clickedDay = null;
+let selectedDayElement = null;
 
-    // Add days of the month
-    for (let i = 1; i <= daysInMonth; i++) {
-        const dayDiv = document.createElement('div');
-        dayDiv.textContent = i;
-        if (i === date.getDate() && currentMonth === new Date().getMonth() && currentYear === new Date().getFullYear()) {
-            dayDiv.classList.add('today');
-        }
-        calendarDays.appendChild(dayDiv);
-    }
+const manipulate = () => {
+  let dayone = new Date(year, month, 1).getDay();
+  let lastdate = new Date(year, month + 1, 0).getDate();
+  let dayend = new Date(year, month, lastdate).getDay();
+  let monthlastdate = new Date(year, month, 0).getDate();
+
+  let lit = "";
+
+  for (let i = dayone; i > 0; i--) {
+    lit += `<li class="inactive">${monthlastdate - i + 1}</li>`;
+  }
+
+  
+  for (let i = 1; i <= lastdate; i++) {
+    let isToday = (i === date.getDate()
+      && month === new Date().getMonth()
+      && year === new Date().getFullYear()) ? "active" : "";
+
+    let highlightClass = (clickedDay === i) ? "highlight" : "";
+
+    lit += `<li class="${isToday} ${highlightClass}" data-day="${i}">${i}</li>`;
+  }
+
+
+  for (let i = dayend; i < 6; i++) {
+    lit += `<li class="inactive">${i - dayend + 1}</li>`;
+  }
+
+  currdate.innerText = `${months[month]} ${year}`;
+  day.innerHTML = lit;
+
+  addClickListenersToDays();
+};
+
+
+function addClickListenersToDays() {
+  const allDays = day.querySelectorAll('li:not(.inactive)');
+  allDays.forEach(li => {
+    li.addEventListener('click', () => {
+      if (selectedDayElement) {
+        selectedDayElement.classList.remove('highlight');
+      }
+
+      li.classList.add('highlight');
+      selectedDayElement = li;
+
+      clickedDay = parseInt(li.getAttribute('data-day'));
+
+      console.log('Clicked day:', clickedDay);
+    });
+  });
 }
 
-prevMonthBtn.addEventListener('click', () => {
-    currentMonth--;
-    if (currentMonth < 0) {
-        currentMonth = 11;
-        currentYear--;
-    }
-    renderCalendar();
-});
+manipulate();
 
-nextMonthBtn.addEventListener('click', () => {
-    currentMonth++;
-    if (currentMonth > 11) {
-        currentMonth = 0;
-        currentYear++;
-    }
-    renderCalendar();
-});
+prenexIcons.forEach(icon => {
+  icon.addEventListener("click", () => {
+    month = icon.id === "calendar-prev" ? month - 1 : month + 1;
 
-renderCalendar(); // Initial render
+    if (month < 0 || month > 11) {
+      date = new Date(year, month, new Date().getDate());
+      year = date.getFullYear();
+      month = date.getMonth();
+    } else {
+      date = new Date();
+    }
+
+    clickedDay = null;
+    selectedDayElement = null;
+
+    manipulate();
+  });
+});
