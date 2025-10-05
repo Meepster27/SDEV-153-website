@@ -20,9 +20,10 @@ display: inline;
 text-align: left;
 color: black;}
 nav ul li :hover{
- background-color: antiquewhite;
+ background-color: white;
  text-align: center;
  font-size: auto;}
+
 body {
 	font-family: Arial, sans-serif;
 	background-color: antiquewhite;
