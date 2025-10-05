@@ -13,9 +13,9 @@ float: left;
 color: black;}
 nav ul li a {
 border: 1px solid black;
-border-radius: 20px;
-margin: 20px;
-padding: 20px;
+border-radius: 10px;
+margin: 5px;
+padding: 50px;
 display: inline;
 text-align: left;
 color: black;}
