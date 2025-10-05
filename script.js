@@ -1,5 +1,7 @@
 // script.js
 
+
+
 // Define an array to store events
 let events = [];
 

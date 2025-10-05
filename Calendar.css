@@ -1,6 +1,28 @@
 /* styles.css */
 
 /* General styling for the entire page */
+nav ul {
+list-style-type:none;
+text-align:left;
+overflow:hidden;
+background-color: antiquewhite;
+font-size: auto;}
+nav ul li {
+display: inline;
+float: left;
+color: black;}
+nav ul li a {
+border: 1px solid black;
+border-radius: 20px;
+margin: 5px;
+padding: 5px;
+display: inline;
+text-align: left;
+color: black;}
+nav ul li :hover{
+ background-color: white;
+ text-align: center;
+ font-size: auto;}
 body {
 	font-family: Arial, sans-serif;
 	background-color: white;
