@@ -25,7 +25,7 @@ nav ul li :hover{
  font-size: auto;}
 body {
 	font-family: Arial, sans-serif;
-	background-color: white;
+	background-color: antiquewhite;
 	margin: 0;
 }
 
@@ -196,7 +196,7 @@ body {
 }
 
 .date-picker:nth-child(6) {
-	color: green;
+	color: blue;
 	/* Friday */
 }
 
