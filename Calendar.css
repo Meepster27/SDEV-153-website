@@ -20,7 +20,7 @@ display: inline;
 text-align: left;
 color: black;}
 nav ul li :hover{
- background-color: white;
+ background-color: antiquewhite;
  text-align: center;
  font-size: auto;}
 body {
@@ -63,7 +63,7 @@ body {
 }
 
 #event-section h3 {
-	color: green;
+	color: rgb(6, 51, 6);
 	font-size: 18px;
 	margin: 0;
 }
