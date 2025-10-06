@@ -13,16 +13,16 @@ float: left;
 color: black;}
 nav ul li a {
 border: 1px solid black;
-border-radius: 10px;
-margin: 5px;
-padding: 50px;
+border-radius: 50px;
+margin: 60px;
+padding: 20px;
 display: inline;
 text-align: left;
 color: black;}
 nav ul li :hover{
- background-color: white;
- text-align: center;
- font-size: auto;}
+background-color: white;
+text-align: center;
+font-size: auto;}
 
 body {
 	font-family: Arial, sans-serif;

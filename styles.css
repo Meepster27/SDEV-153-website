@@ -22,11 +22,11 @@ nav ul li :hover{
  text-align: center;
  font-size: auto;}
 ul li b {
- list-style: none;
+ list-style: disc;
  font-size : auto;
  text-align: left;}
 ul li c {
- list-style: none;
+ list-style: disc;
  font-size : auto;
  text-align: left;}
  
