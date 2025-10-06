@@ -23,24 +23,26 @@ nav ul li :hover{
  font-size: auto;}
 ul li b {
  list-style: disc;
- font-size : auto;
- text-align: left;}
+ font-size : 16px;
+ text-align: center;
+}
 ul li c {
  list-style: disc;
  font-size : auto;
- text-align: left;}
+ text-align: center;
+ padding-left: 0;}
  ul li d {
  list-style: disc;
  font-size : auto;
- text-align: left;}
+ text-align: center;}
  ul li e {
  list-style: disc;
  font-size : auto;
- text-align: left;}
+ text-align: center;}
  ul li f {
  list-style: disc;
  font-size : auto;
- text-align: left;}
+ text-align: center;}
  
  h1{
  font-size: 60px;
