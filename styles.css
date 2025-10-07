@@ -1,4 +1,22 @@
+ @media only screen and (max-width: 768px) {
+        body {
+            font-size: 14px;
+        }
+        .container {
+            width: 95%;
+            padding: 10px;
+        }
+    }
 
+    /* Styles for screens smaller than 480px */
+    @media only screen and (max-width: 480px) {
+        h1 {
+            font-size: 20px;
+        }
+        nav ul li {
+            display: block; /* Stack navigation items */
+        }
+    }
 nav ul {
 list-style-type: none;
 text-align:left;
