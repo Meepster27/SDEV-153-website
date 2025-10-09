@@ -24,6 +24,7 @@ text-align: left;
 font-size: auto;}
 
 body {
+  padding-left: 10px;
   text-align: center;
   background-color: antiquewhite;
   max-width: 1000px;
