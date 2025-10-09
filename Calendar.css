@@ -2,7 +2,9 @@ nav ul {
 list-style-type:none;
 text-align:left;
 overflow:hidden;
+padding: 10px;
 background-color: antiquewhite;
+display: inline-block;
 font-size: auto;}
 nav ul li {
 display: inline;
@@ -22,10 +24,12 @@ text-align: left;
 font-size: auto;}
 
 body {
-	font-family: Arial, sans-serif;
-	background-color: antiquewhite;
-	margin: 0;
-}
+  text-align: center;
+  background-color: antiquewhite;
+  max-width: 1000px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  } 
 
 .wrapper {
 	max-width: 1100px;
@@ -37,7 +41,7 @@ body {
 	background: antiquewhite;
 	padding: 15px;
 	max-width: 900px;
-	margin: 0 auto;
+	/* margin: 0 auto; */
 	overflow: auto;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	display: flex;

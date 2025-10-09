@@ -1,26 +1,29 @@
 nav ul {
-list-style-type: none;
+list-style-type:none;
 text-align:left;
 overflow:hidden;
+padding: 10px;
 background-color: antiquewhite;
+display: inline-block;
 font-size: auto;}
 nav ul li {
 display: inline;
 float: left;
 color: black;}
 nav ul li a {
-display: inline;
-border: 1px solid black;
+border: 2px solid black;
 border-radius: 75px;
 margin: 60px;
-padding: 10px;
+padding: 10px; 
+display: inline;
 text-align: left;
 color: black;}
 nav ul li :hover{
- background-color: white;
- text-align: left;
- font-size: auto;}
- ul {
+background-color: white;
+text-align: left;
+font-size: auto;}
+
+ ul.packages {
  list-style-type: disc;
  padding: 10px;
  background-color: antiquewhite;
@@ -29,7 +32,7 @@ nav ul li :hover{
  display: inline-block;
  text-align: center; 
 } 
-ul li {
+ul li.packages {
   margin: 10px 0;
   padding: 0;
   list-style-position:inside;
