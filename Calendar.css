@@ -124,7 +124,7 @@ body {
 
 /* Reminder section styling */
 #reminder-section {
-	padding: 10px;
+	padding: 20px;
 	background: antiquewhite;
 	margin: 20px 0;
 	border: 1px solid #ccc;
@@ -160,9 +160,9 @@ body {
 /* Buttons in the calendar */
 .button-container-calendar button {
 	cursor: pointer;
-	background: green;
+	background: rgb(53, 94, 70);
 	color: #fff;
-	border: 1px solid green;
+	border: 1px solid rgb(44, 79, 59);
 	border-radius: 4px;
 	padding: 5px 10px;
 }
