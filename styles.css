@@ -22,6 +22,11 @@ nav ul li :hover{
 background-color: white;
 text-align: left;
 font-size: auto;}
+img logo { 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;}
 
  ul.packages {
  list-style-type: disc;
