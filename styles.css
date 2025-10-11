@@ -37,10 +37,13 @@ ul li.packages {
   padding: 0;
   list-style-position: inside;
 }
-img.pclogo {
-  display: block;}
+class.logo {
+  width: 150px;
+  height: 60px;
+  display: block;
+  margin: 0 auto;
+}
 h1{
-
  font-size: 60px;
  text-align: center;
  color: black;
