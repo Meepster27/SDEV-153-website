@@ -37,17 +37,19 @@ ul li.packages {
   padding: 0;
   list-style-position: inside;
 }
-class.logo {
-  width: 150px;
-  height: 60px;
-  display: block;
-  margin: 0 auto;
-}
 h1{
  font-size: 60px;
  text-align: center;
  color: black;
  background-color: antiquewhite;}
+.logo{
+  width: auto;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: antiquewhite; 
+}
  h2{
  text-align: center;
  font-size: 35px;
