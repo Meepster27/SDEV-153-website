@@ -64,6 +64,9 @@ body {
   font-size: 16px;
   padding-bottom: 20px;
   } 
+button {
+padding: auto;
+}
  footer {
   position: fixed;
   bottom: 0;
