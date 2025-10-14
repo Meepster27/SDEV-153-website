@@ -79,6 +79,7 @@ button {
   margin: 10px;}
 
  footer {
+  color : black;
   position: fixed;
   bottom: 0;
   left: 0;
