@@ -64,8 +64,32 @@ body {
   font-size: 16px;
   padding-bottom: 20px;
   } 
+/* Step 1: Basic styling for all icons
+   These styles are required to make icons render reliably */
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;}
+.ghost::before {
+  /* Set the font to Solid */
+  font: var(--fa-font-solid);
+  /* Set the Unicode value for the "fa-ghost" icon */
+  content: '\f6e2';
+}
 
+/* any HTML element with the "delete" class will render fa-trash icon in the Sharp Solid style */
+.delete::before {
+  /* Set the font to Sharp Solid */
+  font: var(--fa-font-sharp-solid);
+  /* Set the Unicode value for the "fa-trash" icon */
+  content: '\f1f8';
+}
 
+/* any HTML element with the "custom-icon" class to render a custom icon (uploaded to a Kit) */
+.custom-icon::before {
+  font-family: 'Font Awesome Kit'; /* note that you need to use "font-family" for custom icons */
+  content: '\[CUSTOM*ICON_UNICODE]'; /* replace with custom icon's unicode value \*/
+}
 
  footer {
   position: fixed;
