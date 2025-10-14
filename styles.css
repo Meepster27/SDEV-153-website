@@ -23,7 +23,7 @@ background-color: white;
 text-align: left;
 font-size: auto;}
 ul.packages {
-  color: black;
+ color: black;
  list-style-type: disc;
  padding: 10px;
  background-color: antiquewhite;
@@ -46,9 +46,8 @@ h1{
  background-color: rgb(53, 94, 70);}
 
 .logo{
-  object-fit: scale-down;
-  width: 200px;
-  height: 150px;
+  width: 150px;
+  height: 100px;
   margin-left: auto;
   margin-right: auto;
   background-color: antiquewhite; 
