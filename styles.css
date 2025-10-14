@@ -23,6 +23,7 @@ background-color: white;
 text-align: left;
 font-size: auto;}
 ul.packages {
+  color: black;
  list-style-type: disc;
  padding: 10px;
  background-color: antiquewhite;
@@ -33,6 +34,7 @@ ul.packages {
  list-style-position: inside;
 } 
 ul li.packages {
+  color: black;
   margin: 10px 0;
   padding: 0;
   list-style-position: inside;
@@ -44,7 +46,9 @@ h1{
  background-color: rgb(53, 94, 70);}
 
 .logo{
-  object-fit: contain;
+  object-fit: scale-down;
+  width: 200px;
+  height: 150px;
   margin-left: auto;
   margin-right: auto;
   background-color: antiquewhite; 
@@ -55,7 +59,7 @@ h1{
  color: antiquewhite;
  background-color: rgb(53, 94, 70);}
  h3{
-  color: antiquewhite;
+  color: black;
   text-decoration: underline;}
 body {
   color: antiquewhite;
