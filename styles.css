@@ -40,7 +40,7 @@ ul li.packages {
 h1{
  font-size: 60px;
  text-align: center;
- color: antiquewhite;
+ color: black;
  background-color: rgb(53, 94, 70);}
 
 .logo{
@@ -52,11 +52,13 @@ h1{
  h2{
  text-align: center;
  font-size: 35px;
- color: black;
+ color: antiquewhite;
  background-color: rgb(53, 94, 70);}
  h3{
+  color: antiquewhite;
   text-decoration: underline;}
 body {
+  color: antiquewhite;
   text-align: center;
   background-color:rgb(53, 94, 70);
   max-width: 1000px;
