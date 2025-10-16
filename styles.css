@@ -92,7 +92,14 @@ button {
   z-index: 1000;
   font-size: 10px;
 }
-
+.founders {
+  height: 200px;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: antiquewhite;}
 div.scroll-container {
   background-color: antiquewhite;
   overflow: auto;
